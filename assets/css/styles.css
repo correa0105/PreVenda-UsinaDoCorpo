@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+main {
+    background-image: url("../img/backgroundEscuro.jpg");
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+}
+
+.leftChamada {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 4rem 5.5rem 5rem;
+}   
+
+.leftChamada img {
+    margin-top: -4.5rem;
+    width: 15rem;
+}
+
+.rightImage {
+    background-image: url("../img/meninoDeusBanner.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 225px;
+}
+
+.leftChamada h1 {
+    margin-top: -2rem;
+    color: #4900DE;
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+.leftChamada h2 {
+    color: #FFF;
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-top: 2rem;
+}
+
+#containerTopicos {
+    display: flex;
+    margin-top: 2rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+#containerTopicos span {
+    font-size: 1.3rem;
+    color: #FFF;
+    background-color: #4900DE;
+    border-radius: 2rem;
+    padding: .3rem 1.3rem;
+    white-space: nowrap;
+}
+
+ul {
+    list-style: none;
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+ul li {
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: #FFF;
+}
+
+ul li span {
+    color: #4900DE;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+section {
+    background-image: url("../img/rodaPe.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    width: 65%;
+    margin: 0 auto;
+    padding: 3rem 0 10rem 0;
+}
+
+form h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+form input, select {
+    width: 100%;
+    height: 3rem;
+    border: 1px solid #666;
+    border-radius: .5rem;
+    padding: 2rem 0 2rem 1rem;
+    font-size: 1.5rem;
+    outline: none;
+}
+
+section form select {
+    height: auto;
+    padding: 1rem .6rem;
+    color: #666;
+} 
+
+form button {
+    background-color: #4900DE;
+    width: 80%;
+    color: #FFF;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+}
+
+@media screen and (min-width: 720px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        min-height: 100vh;
+    }
+
+    .rightImage {
+        background-image: url("../img/meninoDeusBanner.jpg");
+        background-position: center;
+        background-size: cover;
+        height: auto;
+    }
+
+    .leftChamada img {
+        width: 20rem;
+    }
+
+    .leftChamada h1 {
+        font-size: 3.8rem;
+    }
+    
+    .leftChamada h2 {
+        margin-top: 3rem;
+        font-size: 2.2rem;
+    }
+
+    #containerTopicos span {
+        font-size: 2rem;
+    }
+
+    ul {
+        margin-top: 4rem;
+    }
+
+    ul li {
+        font-size: 2.5rem;
+    }
+
+    ul li span {
+        font-size: 2rem;
+    }
+
+    section form {
+        width: 35%;
+    }
+
+    form h1 {
+        font-size: 3.8rem;
+    }
+
+    section form {
+        padding-bottom: 12rem;
+    }
+
+    section {
+        background-position: 50% 120%;
+    }
+}
+
+@media screen and (min-width: 1380px) {
+    .leftChamada {
+        padding: 1rem 4rem 3rem 4rem;
+    }   
+    
+    .leftChamada img {
+        width: 35rem;
+    }
+
+    .leftChamada h1 {
+        font-size: 7rem;
+        margin-top: -6rem;
+    }
+    
+    .leftChamada h2 {
+        margin-top: 2rem;
+        font-size: 4rem;
+    }
+
+    ul {
+        margin-top: 6rem;
+    }
+
+    ul li {
+        font-size: 4.5rem;
+    }
+
+    ul li span {
+        font-size: 5rem;
+    }
+
+    section form {
+        width: 35%;
+    }
+
+    form h1 {
+        font-size: 4.5rem;
+    }
+
+    section form {
+        padding-bottom: 23rem;
+        gap: 2.5rem;
+    }
+
+    form input, section form select {
+        height: 6rem;
+    }
+
+    section {
+        background-position: 50% 120%;
+    }
+
+    form button {
+        font-size: 3rem;
+    }
+}
